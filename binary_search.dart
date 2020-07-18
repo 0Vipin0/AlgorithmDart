@@ -1,6 +1,4 @@
 class Search {
-  // binarySearch -> returns the index of value in the given list, or
-  // -1 if value cannot be found. Assumes list is sorted in ascending order
   int binarySearch(int value, List<int> a) {
     return _searchInner(value, a, 0, a.length);
   }
@@ -17,5 +15,15 @@ class Search {
     } else {
       return mid;
     }
+  }
+
+  int linearSearch(int value, List<int> a) {
+    int p = -1;
+    for (int i = 0; i < a.length; i++) {
+      if (value == a[i]) {
+        p = i;
+      }
+    }
+    return p;
   }
 }

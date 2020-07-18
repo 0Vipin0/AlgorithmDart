@@ -1,13 +1,12 @@
-class Sort {
+class MergeSort {
   /// Returns sorted copy of List a
-  List<int> mergeSortRecursive(List<int> a) {
+  List<int> sort(List<int> a) {
     if (a.length <= 1) {
       return _baseSort(a);
     } else {
       final int subSize = a.length ~/ 2;
-      final List<int> firstHalf = mergeSortRecursive(a.sublist(0, subSize));
-      final List<int> secondHalf =
-          mergeSortRecursive(a.sublist(subSize, a.length));
+      final List<int> firstHalf = sort(a.sublist(0, subSize));
+      final List<int> secondHalf = sort(a.sublist(subSize, a.length));
       return _mergeArray(firstHalf, secondHalf);
     }
   }
