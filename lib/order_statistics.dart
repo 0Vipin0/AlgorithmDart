@@ -27,6 +27,24 @@ class OrderStatistics {
     int max = maximumValue(a);
     return Pair(min, max);
   }
+
+  double meanValue(List<int> a) {
+    assert(a.isNotEmpty);
+    int sum = a[0];
+    for (int i = 1; i < a.length; i++) {
+      sum += a[i];
+    }
+    return sum / a.length;
+  }
+
+  // This is a naive approach
+  double medianValue(List<int> a) {
+    a.sort();
+    if (a.length % 2 != 0) {
+      return a[a.length ~/ 2].toDouble();
+    }
+    return (a[(a.length - 1) ~/ 2] + a[a.length ~/ 2]) / 2;
+  }
 }
 
 class Pair {

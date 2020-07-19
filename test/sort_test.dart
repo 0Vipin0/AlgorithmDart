@@ -1,5 +1,6 @@
 import 'package:AlgorithmDart/sort/bubble_sort.dart';
 import 'package:AlgorithmDart/sort/merge_sort.dart';
+import 'package:AlgorithmDart/sort/quick_sort.dart';
 import 'package:AlgorithmDart/sort/sort.dart';
 import 'package:test/test.dart';
 
@@ -22,6 +23,15 @@ void main() {
       sortedNumber.sort();
 
       expect(bubbleSort.sort(number), sortedNumber);
+    });
+    test('Quick Sort to be tested', () {
+      final Sort quickSort = QuickSort();
+
+      final List<int> number = [12, 1, 34, 56, 45];
+      final List<int> sortedNumber = number;
+      sortedNumber.sort();
+
+      expect(quickSort.sort(number), sortedNumber);
     });
   });
 }

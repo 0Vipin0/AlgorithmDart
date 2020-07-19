@@ -11,8 +11,15 @@ void main() {
     test('MaximumValue to be tested', () {
       expect(orderStatistics.maximumValue(list), 3434);
     });
-    test('MinimumMaximumValueSimple to be tested', () {
+    test('MinimumMaximumValue to be tested', () {
       expect(orderStatistics.minimumMaximumValue(list), Pair(-6, 3434));
+    });
+    test('MeanValue to be tested', () {
+      print(orderStatistics.meanValue(list));
+      expect(orderStatistics.meanValue(list), 689.2);
+    });
+    test('MedianValue to be tested', () {
+      expect(orderStatistics.medianValue(list), 6);
     });
   });
 }
