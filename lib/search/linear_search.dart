@@ -1,6 +1,7 @@
 import 'search.dart';
 
 class LinearSearch implements Search {
+  @override
   int search(int value, List<int> a) {
     int p = -1;
     for (int i = 0; i < a.length; i++) {
