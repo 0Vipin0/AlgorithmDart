@@ -1,4 +1,6 @@
-class MergeSort {
+import 'sort.dart';
+
+class MergeSort implements Sort {
   /// Returns sorted copy of List a
   List<int> sort(List<int> a) {
     if (a.length <= 1) {

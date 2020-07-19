@@ -1,4 +1,6 @@
-class BubbleSort {
+import 'sort.dart';
+
+class BubbleSort implements Sort {
   List<int> sort(List<int> a) {
     final List<int> result = a;
     for (int i = 0; i < a.length; i++) {
