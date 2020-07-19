@@ -1,3 +1,4 @@
 name: AlgorithmDart
 dev_dependencies:
   test : any
+  lint : any
