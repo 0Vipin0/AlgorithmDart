@@ -23,8 +23,8 @@ class OrderStatistics {
 
   Pair minimumMaximumValue(List<int> a) {
     assert(a.isNotEmpty);
-    int min = minimumValue(a);
-    int max = maximumValue(a);
+    final int min = minimumValue(a);
+    final int max = maximumValue(a);
     return Pair(min, max);
   }
 
@@ -44,6 +44,14 @@ class OrderStatistics {
       return a[a.length ~/ 2].toDouble();
     }
     return (a[(a.length - 1) ~/ 2] + a[a.length ~/ 2]) / 2;
+  }
+
+  int factorial(int number) {
+    if (number <= 1) {
+      return 1;
+    } else {
+      return number * factorial(number - 1);
+    }
   }
 }
 

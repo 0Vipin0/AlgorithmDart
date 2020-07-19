@@ -3,7 +3,7 @@ class BaseConversion {
     if (number < base) {
       return "$number";
     } else {
-      return convert(number ~/ base, base) + '${number % base}';
+      return '${convert(number ~/ base, base)}${number % base}';
     }
   }
 }
