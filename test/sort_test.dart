@@ -1,10 +1,10 @@
+import 'package:AlgorithmDart/sort/bubble_sort.dart';
+import 'package:AlgorithmDart/sort/merge_sort.dart';
+import 'package:AlgorithmDart/sort/sort.dart';
 import 'package:test/test.dart';
-import '../lib/sort/sort.dart';
-import '../lib/sort/merge_sort.dart';
-import '../lib/sort/bubble_sort.dart';
 
 void main() {
-  group("Search", () {
+  group("Sort", () {
     test('Merge Sort to be tested', () {
       final Sort mergeSort = MergeSort();
 
