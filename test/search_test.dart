@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
-import 'search/search.dart';
-import 'search/linear_search.dart';
-import 'search/binary_search.dart';
+import '../lib/search/search.dart';
+import '../lib/search/linear_search.dart';
+import '../lib/search/binary_search.dart';
 
 void main() {
   group("Search", () {
